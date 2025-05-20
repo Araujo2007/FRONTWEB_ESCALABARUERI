@@ -1,0 +1,29 @@
+body {
+    background-image: url(../assets/TELALOGINADM.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.areaLogin {
+    display: flex;
+    background-color: white;
+    width: 60vw;
+
+}
+
+.areaPreenchimento {
+    background-color: white;
+}
+
+.areaLogo {
+    background-color: #12577B;
+}
