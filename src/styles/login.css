@@ -43,7 +43,7 @@
 
   input {
     width: 80%;
-    height: 50px;
+    height: 6vh;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 100;
@@ -77,14 +77,14 @@
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    font-size: 60px;
+    font-size: 6vh;
     letter-spacing: 8px;
     margin: 0px;
   }
 
 
   img {
-    width: 200px;
+    width: 10vw;
   }
 
   .button {
