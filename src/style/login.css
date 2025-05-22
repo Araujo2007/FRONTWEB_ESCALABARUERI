@@ -12,37 +12,38 @@
   */
 
   body {
-      background-image: url(../assets/TELALOGINADM.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      align-items: center;
+    background-image: url(../assets/TELALOGINADM.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
   }
 
 
 
   .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
   }
 
   .areaLogin {
-      display: flex;
-      background-color: white;
-      width: 60vw;
-      height: 80vh;
-      border-radius: 40px;
+    display: flex;
+    background-color: white;
+    width: 60vw;
+    height: 80vh;
+    border-radius: 40px;
   }
 
   .areaPreenchimento {
     width: 60%;
     text-align: center;
+    margin: auto;
   }
 
-  input{
-    width: 60%;
-    height: 40px;
+  input {
+    width: 80%;
+    height: 50px;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 100;
@@ -50,30 +51,80 @@
     font-size: 20px;
     border-radius: 30px;
     border-color: #12577B;
+    border-style: solid;
+    border-width: 1px;
+  }
+
+  input::placeholder{
+    color: #12577B;
   }
 
   .areaLogo {
-      background-color: #12577B;
-      border-top-left-radius: 40px;
-      border-bottom-left-radius: 40px;
-      width: 40%;
-      text-align: center;
+    background-color: #12577B;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    width: 40%;
+    text-align: center;
   }
 
   .elementosLogo {
-      margin-top: 166px;
+    margin-top: 166px;
   }
 
   .tituloLogo {
-      color: white;
-      font-family: "Montserrat", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 600;
-      font-style: normal;
-      font-size: 40px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 60px;
+    letter-spacing: 8px;
+    margin: 0px;
   }
 
 
   img {
-      width: 150px;
+    width: 200px;
+  }
+
+  .button {
+    color: white;
+    background-color: #12577B;
+    border-color: white;
+    border-style: unset;
+    letter-spacing: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 20px;
+  }
+
+  a{
+    color: #12577B;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 15px;
+  }
+
+  .textAdm{
+    color: #12577B;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 52px;
+    letter-spacing: 8px;
+  }
+
+  h2{
+    color: #12577B;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 35px;
+    letter-spacing: 5px;
   }

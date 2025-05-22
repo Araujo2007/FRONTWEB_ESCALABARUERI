@@ -1,10 +1,25 @@
 import React from "react";
 import '../../style/login.css'
 import Logo from "../../assets/logo.png"
+import { useRef } from "react";
 
 // import styles from './index.module.css'
 
 function login() {
+
+    const matricula = useRef()
+    const password = useRef()
+
+    function handleSubmit(event) {
+        event.preventDefault()
+
+        try {
+            matricula.current.value,
+            password.current.value
+        } catch (error) {
+            
+        }
+    }
 
     return (
         // <div className={styles.div}>
@@ -20,13 +35,18 @@ function login() {
 
                     </div>
                     <div className="areaPreenchimento">
-                        <h1>Administrador</h1>
-                        <br />
-                        <h2>Login</h2>
-                        <br />
-                        <input type="text" placeholder="Número de Matrícula" />
-                        <br /><br />
-                        <input type="password" placeholder="Senha" />
+                        <form action="">
+                            <h1 className="textAdm">Administrador</h1>
+                            <h2>Login</h2>
+                            <br />
+                            <input type="text" placeholder=" Número de Matrícula" ref={matricula} />
+                            <br /><br />
+                            <input type="password" placeholder=" Senha" ref={password} />
+                            <br /><br />
+                            <input className="button" type="button" value="ENTRAR" />
+                            <br /><br />
+                            <a href="">ESQUECI MINHA SENHA</a>
+                        </form>
                     </div>
                 </div>
             </div>
