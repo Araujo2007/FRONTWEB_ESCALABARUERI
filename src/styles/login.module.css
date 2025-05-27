@@ -11,7 +11,7 @@
     font-style: normal;
   */
 
-  body {
+  .body {
     background-image: url(../assets/TELALOGINADM.png);
     background-repeat: no-repeat;
     background-size: cover;

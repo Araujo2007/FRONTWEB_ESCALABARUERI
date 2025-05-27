@@ -7,49 +7,49 @@ import { useForm } from "react-hook-form"
 
 function login() {
     const onSubmit = () => {
-        
+
     }
 
     const {
         register,
         handleSubmit,
         formState: { errors },
-      } = useForm()
+    } = useForm()
 
 
     return (
 
         // <div className={styles.div}>
-        <div>
-            <div className={styles.container}>
-                <div className={styles.areaLogin}>
-                    <div className={styles.areaLogo}>
-                        <div className={styles.elementosLogo}>
-                            <img src={Logo} alt="" />
-                            <h1 className={styles.tituloLogo}>Escala</h1>
-                            <h1 className={styles.tituloLogo}>Barueri</h1>
-                        </div>
+        <div className={styles.body}>
+        <div className={styles.container}>
+            <div className={styles.areaLogin}>
+                <div className={styles.areaLogo}>
+                    <div className={styles.elementosLogo}>
+                        <img src={Logo} alt="" />
+                        <h1 className={styles.tituloLogo}>Escala</h1>
+                        <h1 className={styles.tituloLogo}>Barueri</h1>
+                    </div>
 
-                    </div>
-                    <div className={styles.areaPreenchimento}>
-                        <form  onSubmit={handleSubmit(onSubmit)}>
-                            <h1 className={styles.textAdm}>Administrador</h1>
-                            <h2>Login</h2>
-                            <br />
-                            <input type="text" placeholder=" Número de Matrícula" {...register("matricula", {
-                                required: true,
-                                pattern: /^[0-9]+$/i
-                            })} />
-                            <br /><br />
-                            <input type="password" placeholder=" Senha" {...register("password")} />
-                            <br /><br />
-                            <input className="button" type="submit" value="ENTRAR" />
-                            <br /><br />
-                            <a href="">ESQUECI MINHA SENHA</a>
-                        </form>
-                    </div>
+                </div>
+                <div className={styles.areaPreenchimento}>
+                    <form onSubmit={handleSubmit(onSubmit)}>
+                        <h1 className={styles.textAdm}>Administrador</h1>
+                        <h2>Login</h2>
+                        <br />
+                        <input type="text" placeholder=" Número de Matrícula" {...register("matricula", {
+                            required: true,
+                            pattern: /^[0-9]+$/i
+                        })} />
+                        <br /><br />
+                        <input type="password" placeholder=" Senha" {...register("password")} />
+                        <br /><br />
+                        <input className="button" type="submit" value="ENTRAR" />
+                        <br /><br />
+                        <a href="">ESQUECI MINHA SENHA</a>
+                    </form>
                 </div>
             </div>
+        </div>
         </div>
     )
 
