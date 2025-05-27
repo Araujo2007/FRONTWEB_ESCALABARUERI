@@ -41,7 +41,7 @@
     margin: auto;
   }
 
-  input {
+  .input {
     width: 80%;
     height: 6vh;
     font-family: "Montserrat", sans-serif;
@@ -55,7 +55,7 @@
     border-width: 1px;
   }
 
-  input::placeholder{
+  .input::placeholder{
     color: #12577B;
   }
 
@@ -83,11 +83,13 @@
   }
 
 
-  img {
+  .img {
     width: 10vw;
   }
 
   .button {
+    width: 80%;
+    height: 6vh;
     color: white;
     background-color: #12577B;
     border-color: white;
@@ -98,9 +100,10 @@
     font-weight: 100;
     font-style: normal;
     font-size: 20px;
+    border-radius: 30px;
   }
 
-  a{
+  .a{
     color: #12577B;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -119,7 +122,7 @@
     letter-spacing: 8px;
   }
 
-  h2{
+  .h2{
     color: #12577B;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;

@@ -34,18 +34,18 @@ function login() {
                 <div className={styles.areaPreenchimento}>
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <h1 className={styles.textAdm}>Administrador</h1>
-                        <h2>Login</h2>
+                        <h2 className={styles.h2}>Login</h2>
                         <br />
-                        <input type="text" placeholder=" Número de Matrícula" {...register("matricula", {
+                        <input className={styles.input} type="text" placeholder=" Número de Matrícula" {...register("matricula", {
                             required: true,
                             pattern: /^[0-9]+$/i
                         })} />
                         <br /><br />
-                        <input type="password" placeholder=" Senha" {...register("password")} />
+                        <input className={styles.input} type="password" placeholder=" Senha" {...register("password")} />
                         <br /><br />
-                        <input className="button" type="submit" value="ENTRAR" />
+                        <input className={styles.button} type="submit" value="ENTRAR" />
                         <br /><br />
-                        <a href="">ESQUECI MINHA SENHA</a>
+                        <a className={styles.a} href="">ESQUECI MINHA SENHA</a>
                     </form>
                 </div>
             </div>
