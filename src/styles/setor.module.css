@@ -1,0 +1,60 @@
+.offcanvas {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  padding: 1rem;
+  transition: left 0.3s ease-in-out;
+  z-index: 1000;
+}
+ 
+.ativo {
+  right: 0;
+}
+ 
+.fechar {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  float: right;
+  cursor: pointer;
+}
+ 
+.menuList {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+}
+ 
+.menuList li {
+  margin: 1rem 0;
+}
+ 
+.menuList a {
+  color: white;
+  text-decoration: none;
+}
+ 
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #222;
+  color: white;
+  padding: 1rem;
+}
+ 
+.menuButton {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+ 
+.logo {
+  margin: 0;
+}
