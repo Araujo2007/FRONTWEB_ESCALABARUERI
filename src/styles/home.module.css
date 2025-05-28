@@ -1,0 +1,123 @@
+ /* Fonte Inter!!!!!!!!!!!!!!!!
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal; */
+
+  /* Fonte Montserrat!!!!!!!!!!!!!!!!!!
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  */
+
+.secretariaElogo{
+    display: flex;
+    width: 100%;
+    height: 8vh;
+}
+
+  .textSecretaria{
+    text-align: center;
+    width: 50%;
+    margin: 1vh;
+    height: 6vh;
+  }
+
+.h2Logo{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin: 0;
+    font-size: 2.5vh;
+}
+
+.h1Logo{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: #12577B;
+    font-size: 3.5vh;
+    margin: 0;
+}
+
+.logo{
+    margin: 10px;
+    width: 50%;
+    text-align: center;
+}
+
+.imgLogo{
+    height: 6vh;
+}
+
+.navbar{
+    display: flex;
+    width: 100vw;
+    height: 8vh;
+    background-color: #12577B;
+}
+
+.exit{
+    height: 5vh;
+    margin-top: 1.5vh;
+    margin-left: 1.5vw;
+}
+
+.boasVindas{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vh;
+    width:auto;
+    height: 6vh;
+    margin-top: 2.5vh;
+    margin-left: 1vw;
+}
+
+.notification{
+    height: 5vh;
+    margin-top: 1.5vh;
+    margin-left: auto;
+    margin-right: 1.5vw;
+}
+
+.barraPesquisa{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.inputPesquisa{
+    border: none;
+    background-color: #dfdfdf;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 4vh;
+    width: 20vw;
+}
+
+.inputPesquisa::placeholder{
+    font-size: 2vh;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+.lupa{
+    background-color: #dfdfdf;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.imgLupa{
+    height: 3vh;
+    margin-top: 0.5vh;
+    margin-right: 1vh;
+}
