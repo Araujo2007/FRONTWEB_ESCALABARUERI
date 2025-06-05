@@ -11,9 +11,9 @@
     font-style: normal;
   */
 
-  .fixed{
-    position: fixed;
-  }
+ .fixed {
+     position: fixed;
+ }
 
  .secretariaElogo {
      display: flex;
@@ -92,7 +92,7 @@
  }
 
  .barraPesquisa {
-    margin-top: 18vh;
+     margin-top: 18vh;
      display: flex;
      justify-content: center;
      width: 100vw;
@@ -128,25 +128,29 @@
      margin-right: 1vh;
  }
 
- .dashTeste{
-    text-align: center;
-    width: 100vw;
+ .dashTeste {
+     text-align: center;
+     width: 100vw;
  }
 
- .dash{
-    width: 50vw;
+ .dash {
+     width: 50vw;
  }
 
  .setoresEequipes {
      display: flex;
      width: 100vw;
+     margin-left: 5vw;
+     margin-right: 5vw;
  }
 
  .setores {
      background-color: #dfdfdf;
      width: 43vw;
-     margin: auto;
+     margin-left: 5vw;
+     margin-right: 1vw;
      border-radius: 20px;
+     margin-top: 0px;
  }
 
  .titulo {
@@ -172,3 +176,108 @@
      border: none;
      border-radius: 20px;
  }
+
+ .opcoes {
+
+     width: 31.2vw;
+     margin-right: 5vw;
+     margin-left: 1vw;
+     border-radius: 20px;
+     margin-top: 0px;
+ }
+
+ .principaisOpcoes {
+     display: flex;
+ }
+
+ .principaisOpcoesR {
+     display: grid;
+ }
+
+ .setorConsultar {
+     background-color: cadetblue;
+     height: 30vh;
+     width: 20vw;
+     text-align: center;
+     margin: 1.2vh;
+     font-family: "Montserrat", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 600;
+     font-style: normal;
+     font-size: 2vh;
+     border: none;
+     border-radius: 20px;
+ }
+
+ .setorNovoFuncionario {
+     background-color: cadetblue;
+     height: 13.8vh;
+     width: 8.8vw;
+     text-align: center;
+     margin: 1.2vh;
+     font-family: "Montserrat", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 600;
+     font-style: normal;
+     font-size: 2vh;
+     border: none;
+     border-radius: 20px;
+ }
+
+ .setorRelatótios {
+     background-color: cadetblue;
+     height: 13.8vh;
+     width: 8.8vw;
+     text-align: center;
+     margin: 1.2vh;
+     font-family: "Montserrat", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 600;
+     font-style: normal;
+     font-size: 2vh;
+     border: none;
+     border-radius: 20px;
+ }
+
+ .setorNotification {
+     background-color: cadetblue;
+     height: 13.8vh;
+     width: 14.4vw;
+     text-align: center;
+     margin: 1.2vh;
+     font-family: "Montserrat", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 600;
+     font-style: normal;
+     font-size: 2vh;
+     border: none;
+     border-radius: 20px;
+ }
+
+ .setorConfig {
+     background-color: cadetblue;
+     height: 13.8vh;
+     width: 14.4vw;
+     text-align: center;
+     margin: 1.2vh;
+     font-family: "Montserrat", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 600;
+     font-style: normal;
+     font-size: 2vh;
+     border: none;
+     border-radius: 20px;
+ }
+
+.informacoesOpcoes{
+    margin: auto;
+}
+
+.iconOpcoes{
+    /* height: 4vh; */
+    width: 3vw;
+}
+
+.textOpcoes{
+    margin: 2px;
+}
