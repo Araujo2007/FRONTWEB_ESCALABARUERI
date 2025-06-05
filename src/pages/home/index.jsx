@@ -5,6 +5,10 @@ import exit from "../../assets/icons/exit.png"
 import notification from "../../assets/icons/notification.png"
 import lupa from "../../assets/icons/lupa.png"
 import dash from "../../assets/Frame 15.png"
+import config from "../../assets/icons/settings.png"
+import calendar from "../../assets/icons/calendar.png"
+import user from "../../assets/icons/user.png"
+import relatorio from "../../assets/icons/relatorio.png"
 
 function home() {
     return (
@@ -53,20 +57,20 @@ function home() {
                     <div className={styles.principaisOpcoes}>
                         <button className={styles.setorConsultar}>
                         <div className={styles.informacoesOpcoes}>
-                            <img src={notification} alt="" className={styles.iconOpcoes}/>
+                            <img src={calendar} alt="" className={styles.iconOpcoes}/>
                             <p className={styles.textOpcoes}>Consultar Datas</p>
                             </div>
                             </button>
                         <div className={styles.principaisOpcoesR}>
                         <button className={styles.setorNovoFuncionario}>
                          <div className={styles.informacoesOpcoes}>
-                         <img src={notification} alt="" className={styles.iconOpcoes}/>
+                         <img src={user} alt="" className={styles.iconOpcoes}/>
                          <p className={styles.textOpcoes}>Novo Funcionário</p>
                          </div>
                         </button>
                         <button className={styles.setorRelatótios}>
                             <div className={styles.informacoesOpcoes}>
-                            <img src={notification} alt="" className={styles.iconOpcoes}/>
+                            <img src={relatorio} alt="" className={styles.iconOpcoes}/>
                             <p className={styles.textOpcoes}>Relatórios</p>
                             </div>
                             </button>
@@ -79,7 +83,7 @@ function home() {
                             </div></button>
                     <button className={styles.setorConfig}>
                     <div className={styles.informacoesOpcoes}>
-                            <img src={notification} alt="" className={styles.iconOpcoes}/>
+                            <img src={config} alt="" className={styles.iconOpcoes}/>
                             <p className={styles.textOpcoes}>Configurações</p>
                             </div></button>
                 </div>
