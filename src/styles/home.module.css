@@ -195,7 +195,7 @@
  }
 
  .setorConsultar {
-     background-color: cadetblue;
+     background-color: #A9CFE5;
      height: 30vh;
      width: 20vw;
      text-align: center;
@@ -210,7 +210,7 @@
  }
 
  .setorNovoFuncionario {
-     background-color: cadetblue;
+     background-color: #021B33;
      height: 13.8vh;
      width: 8.8vw;
      text-align: center;
@@ -225,7 +225,7 @@
  }
 
  .setorRelatótios {
-     background-color: cadetblue;
+     background-color: gray;
      height: 13.8vh;
      width: 8.8vw;
      text-align: center;
@@ -240,8 +240,8 @@
  }
 
  .setorNotification {
-     background-color: cadetblue;
-     height: 13.8vh;
+     background-color: rgb(119, 95, 160);
+     height: 18.1vh;
      width: 14.4vw;
      text-align: center;
      margin: 1.2vh;
@@ -252,11 +252,12 @@
      font-size: 2vh;
      border: none;
      border-radius: 20px;
+     margin-bottom: 0px;
  }
 
  .setorConfig {
-     background-color: gray;
-     height: 13.8vh;
+     background-color: #12577B;
+     height: 18.1vh;
      width: 14.4vw;
      text-align: center;
      margin: 1.2vh;
@@ -267,6 +268,7 @@
      font-size: 2vh;
      border: none;
      border-radius: 20px;
+     margin-bottom: 0px;
  }
 
 .informacoesOpcoes{
