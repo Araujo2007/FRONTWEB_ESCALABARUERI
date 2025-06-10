@@ -1,5 +1,5 @@
 import React from "react"
-import styles from '../../styles/setor.module.css'
+import styles from '../../styles/consulta.module.css'
 import Logo from "../../assets/icons/barueri.png"
 import exit from "../../assets/icons/exit.png"
 import notification from "../../assets/icons/notification.png"
@@ -10,7 +10,7 @@ import calendar from "../../assets/icons/calendar.png"
 import user from "../../assets/icons/user.png"
 import relatorio from "../../assets/icons/relatorio.png"
 
-function setor() {
+function consulta() {
     return (
         <div className={styles.container}>
             <div className={styles.fixed}>
@@ -34,4 +34,4 @@ function setor() {
     )
 }
 
-export default setor
+export default consulta

@@ -9,8 +9,20 @@ import config from "../../assets/icons/settings.png"
 import calendar from "../../assets/icons/calendar.png"
 import user from "../../assets/icons/user.png"
 import relatorio from "../../assets/icons/relatorio.png"
+import { useNavigate } from "react-router-dom";
 
 function home() {
+
+    const navigate = useNavigate() 
+
+    const consulta = () => {
+        navigate('../consulta')
+    }
+
+    const setor = () => {
+        navigate('../setor')
+    }
+
     return (
         <div className={styles.container}>
             <div className={styles.fixed}>
@@ -42,20 +54,20 @@ function home() {
             <div className={styles.setoresEequipes}>
                 <div className={styles.setores}>
                     <h2 className={styles.titulo}>Setores</h2>
-                    <button type="button" className={styles.setor}>Administração</button>
-                    <button type="button" className={styles.setor}>Recursos Humanos</button>
-                    <button type="button" className={styles.setor}>Suporte</button>
-                    <button type="button" className={styles.setor}>Atendimento</button>
-                    <button type="button" className={styles.setor}>+</button>
+                    <button type="button" className={styles.setor} onClick={setor}>Administração</button>
+                    <button type="button" className={styles.setor} onClick={setor}>Recursos Humanos</button>
+                    <button type="button" className={styles.setor} onClick={setor}>Suporte</button>
+                    <button type="button" className={styles.setor} onClick={setor}>Atendimento</button>
+                    <button type="button" className={styles.setor} onClick={setor}>+</button>
                     <h2 className={styles.titulo}>Equipes</h2>
-                    <button type="button" className={styles.setor}>Alfa</button>
-                    <button type="button" className={styles.setor}>Bravo</button>
-                    <button type="button" className={styles.setor}>Charlie</button>
-                    <button type="button" className={styles.setor}>Delta</button>
+                    <button type="button" className={styles.setor} onClick={setor}>Alfa</button>
+                    <button type="button" className={styles.setor} onClick={setor}>Bravo</button>
+                    <button type="button" className={styles.setor} onClick={setor}>Charlie</button>
+                    <button type="button" className={styles.setor} onClick={setor}>Delta</button>
                 </div>
                 <div className={styles.opcoes}>
                     <div className={styles.principaisOpcoes}>
-                        <button className={styles.setorConsultar}>
+                        <button className={styles.setorConsultar} onClick={consulta}>
                         <div className={styles.informacoesOpcoes}>
                             <img src={calendar} alt="" className={styles.iconOpcoes}/>
                             <p className={styles.textOpcoes}>Consultar Datas</p>
