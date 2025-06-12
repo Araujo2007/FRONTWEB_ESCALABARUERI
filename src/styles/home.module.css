@@ -17,7 +17,7 @@
 
  .secretariaElogo {
      display: flex;
-     width: 100%;
+     width: 100vw;
      height: 8vh;
      background-color: white;
  }
@@ -60,15 +60,20 @@
 
  .navbar {
      display: flex;
-     width: 100vw;
+     justify-content: space-between;
      height: 8vh;
      background-color: #12577B;
+ }
+
+ .navbarP{
+    display: flex;
  }
 
  .exit {
      height: 5vh;
      margin-top: 1.5vh;
      margin-left: 1.5vw;
+     transform: rotate(180deg);
  }
 
  .boasVindas {
@@ -85,9 +90,7 @@
  }
 
  .notification {
-     height: 5vh;
      margin-top: 1.5vh;
-     margin-left: auto;
      margin-right: 1.5vw;
  }
 
@@ -139,9 +142,9 @@
 
  .setoresEequipes {
      display: flex;
-     width: 100vw;
-     margin-left: 5vw;
-     margin-right: 5vw;
+     justify-content: space-between;
+     margin-right: 2.5vw;
+     margin-left: 2.5vw;
  }
 
  .setores {
@@ -178,7 +181,6 @@
  }
 
  .opcoes {
-
      width: 31.2vw;
      margin-right: 5vw;
      margin-left: 1vw;
@@ -192,6 +194,11 @@
 
  .principaisOpcoesR {
      display: grid;
+ }
+
+ .maisOpcoes {
+     display: flex;
+     justify-content: space-between;
  }
 
  .setorConsultar {
@@ -219,7 +226,7 @@
      font-optical-sizing: auto;
      font-weight: 600;
      font-style: normal;
-     font-size: 2vh;
+     font-size: 1.8vh;
      border: none;
      border-radius: 20px;
  }
@@ -282,4 +289,9 @@
 
 .textOpcoes{
     margin: 2px;
+}
+
+.textOpcoesB{
+    margin: 2px;
+    color: white;
 }

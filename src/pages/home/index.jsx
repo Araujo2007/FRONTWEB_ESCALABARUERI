@@ -1,19 +1,19 @@
 import React from "react"
 import styles from '../../styles/home.module.css'
 import Logo from "../../assets/icons/barueri.png"
-import exit from "../../assets/icons/exit.png"
-import notification from "../../assets/icons/notification.png"
+import { IoMdExit } from "react-icons/io";
+import { FaBell } from "react-icons/fa";
 import lupa from "../../assets/icons/lupa.png"
 import dash from "../../assets/Frame 15.png"
-import config from "../../assets/icons/settings.png"
-import calendar from "../../assets/icons/calendar.png"
-import user from "../../assets/icons/user.png"
-import relatorio from "../../assets/icons/relatorio.png"
+import { FaGear } from "react-icons/fa6";
+import { FaCalendarAlt } from "react-icons/fa";
+import { FaUserPlus } from "react-icons/fa";
+import { MdAutoGraph } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 
 function home() {
 
-    const navigate = useNavigate() 
+    const navigate = useNavigate()
 
     const consulta = () => {
         navigate('../consulta')
@@ -36,9 +36,13 @@ function home() {
                     </div>
                 </div>
                 <nav className={styles.navbar}>
-                    <img src={exit} alt="" className={styles.exit} />
-                    <p className={styles.boasVindas}>Bem Vindo(a) Rogério</p>
-                    <img src={notification} alt="" className={styles.notification} />
+                    <div className={styles.navbarP}>
+                        <IoMdExit className={styles.exit} size={40} color="white"/>
+                        <p className={styles.boasVindas}>Bem Vindo(a) Rogério</p>
+                    </div>
+                    <div className={styles.notification}>
+                        <FaBell size={40} color="#F5D100" />
+                    </div>
                 </nav>
             </div>
             <br />
@@ -68,36 +72,40 @@ function home() {
                 <div className={styles.opcoes}>
                     <div className={styles.principaisOpcoes}>
                         <button className={styles.setorConsultar} onClick={consulta}>
-                        <div className={styles.informacoesOpcoes}>
-                            <img src={calendar} alt="" className={styles.iconOpcoes}/>
-                            <p className={styles.textOpcoes}>Consultar Datas</p>
-                            </div>
-                            </button>
-                        <div className={styles.principaisOpcoesR}>
-                        <button className={styles.setorNovoFuncionario}>
-                         <div className={styles.informacoesOpcoes}>
-                         <img src={user} alt="" className={styles.iconOpcoes}/>
-                         <p className={styles.textOpcoes}>Novo Funcionário</p>
-                         </div>
-                        </button>
-                        <button className={styles.setorRelatótios}>
                             <div className={styles.informacoesOpcoes}>
-                            <img src={relatorio} alt="" className={styles.iconOpcoes}/>
-                            <p className={styles.textOpcoes}>Relatórios</p>
+                                <FaCalendarAlt size={50} />
+                                <p className={styles.textOpcoes}>Consultar Datas</p>
                             </div>
+                        </button>
+                        <div className={styles.principaisOpcoesR}>
+                            <button className={styles.setorNovoFuncionario}>
+                                <div className={styles.informacoesOpcoes}>
+                                    <FaUserPlus size={40} color="white" />
+                                    <p className={styles.textOpcoesB}>Novo Funcionário</p>
+                                </div>
+                            </button>
+                            <button className={styles.setorRelatótios}>
+                                <div className={styles.informacoesOpcoes}>
+                                    <MdAutoGraph size={40} />
+                                    <p className={styles.textOpcoes}>Relatórios</p>
+                                </div>
                             </button>
                         </div>
                     </div>
-                    <button className={styles.setorNotification}>
-                    <div className={styles.informacoesOpcoes}>
-                            <img src={notification} alt="" className={styles.iconOpcoes}/>
-                            <p className={styles.textOpcoes}>Notificações</p>
-                            </div></button>
-                    <button className={styles.setorConfig}>
-                    <div className={styles.informacoesOpcoes}>
-                            <img src={config} alt="" className={styles.iconOpcoes}/>
-                            <p className={styles.textOpcoes}>Configurações</p>
-                            </div></button>
+                    <div className={styles.maisOpcoes}>
+                        <button className={styles.setorNotification}>
+                            <div className={styles.informacoesOpcoes}>
+                                <FaBell size={40}/>
+                                <p className={styles.textOpcoes}>Notificações</p>
+                            </div>
+                        </button>
+                        <button className={styles.setorConfig}>
+                            <div className={styles.informacoesOpcoes}>
+                                <FaGear size={40} color="white" />
+                                <p className={styles.textOpcoes}>Configurações</p>
+                            </div>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
